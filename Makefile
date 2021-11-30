@@ -6,7 +6,7 @@
 #    By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 09:59:50 by mbellini          #+#    #+#              #
-#    Updated: 2021/11/29 12:53:18 by mbellini         ###   ########.fr        #
+#    Updated: 2021/11/30 12:55:47 by mbellini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,6 @@ clean:
 		$(RM) $(OBJS)
 fclean:	clean
 		$(RM) $(NAME)
-re:	fclean$(NAME)
+re:	fclean $(NAME)
 
 .PHONY:	all clean fclean re

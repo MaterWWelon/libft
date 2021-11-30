@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 17:44:29 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/29 13:00:47 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:54:26 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_isascii(int c);
 
 int		ft_isprint(int c);
 
-int		ft_strlen(char *str);
+size_t	ft_strlen(const char *s);
 
 void	*ft_memset(void *s, int c, size_t n);
 

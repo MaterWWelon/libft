@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 12:22:54 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/29 11:05:12 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/11/30 18:00:37 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	start = 0;
-	end = ft_strlen((char *)s1);
+	end = ft_strlen(s1);
 	while (c_is_set(s1[start], set) == 1)
 		start++;
 	while (c_is_set(s1[end - 1], set) == 1)
