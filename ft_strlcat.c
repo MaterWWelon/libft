@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 18:17:33 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/01 11:58:43 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:33:31 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		i++;
 	}
 	dst[y + i] = '\0';
-	printf("%s\n", dst);
-	printf("%zu\n", r + f);
 	return (r + f);
 }
