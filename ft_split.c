@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 14:43:56 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/29 11:25:09 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:14:30 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,15 @@ static int	nb_malloc1(char const *s, char c)
 	int	count;
 
 	i = 1;
-	count = 1;
+	count = 0;
 	while (s[i])
 	{
 		if (s[i] == c && s[i - 1] != c)
 			count++;
 		i++;
 	}
+	if (count == 0)
+		count = 1;
 	return (count);
 }
 
@@ -42,7 +44,7 @@ static char	*cpy(char *s, int len)
 		cpy[i] = s[i];
 		i++;
 	}
-	cpy[i] = 0;
+	cpy[i] = '\0';
 	return (cpy);
 }
 
@@ -59,7 +61,7 @@ char	**ft_split(char const *s, char c)
 	split = malloc((nb_malloc1(s, c) + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
-	while (s[i])
+	while (s[i] && pos < nb_malloc1(s, c))
 	{
 		while (s[i] == c && s[i])
 			i++;

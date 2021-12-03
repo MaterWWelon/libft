@@ -6,13 +6,20 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:21:01 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/24 10:22:14 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 13:05:12 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
-		c += 32;
-	return (c);
+	unsigned char r;
+
+	r = (unsigned char)c;
+	if (c == -1)
+		return (-1);
+	if ((r >= 'A' && r <= 'Z'))
+		r += 32;
+	return (r);
 }

@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:25:02 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/29 10:40:17 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/01 10:09:12 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ char	*ft_strchr(const char *s, int c)
 	ptr = (char *)s;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == c % 256)
 			return (ptr + i);
 		i++;
 	}
+	if (c == '\0')
+		return (ptr + i);
 	return (NULL);
 }

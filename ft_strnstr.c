@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:09:41 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/29 10:44:43 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 13:12:01 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	char	*ptr;
 
 	i = 0;
-	if (!little)
+	if (!little[0])
 		return ((char *)big);
 	while (big[i] && i < len)
 	{
