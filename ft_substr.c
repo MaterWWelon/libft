@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:17:25 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/03 13:45:55 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:38:19 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len >= ft_strlen(s))
 		ft_strlen(s);
 	while (s[start + i] && i < len)
-		i++;	
+		i++;
 	sub = malloc(i * sizeof(char) + 1);
 	if (!sub)
 		return (NULL);

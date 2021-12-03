@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:21:01 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/03 13:05:12 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:40:28 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	unsigned char r;
+	unsigned char	r;
 
 	r = (unsigned char)c;
 	if (c == -1)
