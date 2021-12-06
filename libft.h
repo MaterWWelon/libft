@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 17:44:29 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/30 17:54:26 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/06 16:38:24 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # include <stdlib.h>
-# include <unistd.h>
 # include <stdio.h>
 # include <unistd.h>
+# include <string.h>
 
 int		ft_isalpha(int c);
 

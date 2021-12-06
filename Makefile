@@ -6,7 +6,7 @@
 #    By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 09:59:50 by mbellini          #+#    #+#              #
-#    Updated: 2021/12/03 16:25:40 by mbellini         ###   ########.fr        #
+#    Updated: 2021/12/06 16:41:55 by mbellini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,10 @@ all:	$(NAME)
 
 $(NAME):	$(OBJS)
 		ar rcs $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(FLAGS) -o $@ -c $<
+
 clean:
 		$(RM) $(OBJS)
 fclean:	clean

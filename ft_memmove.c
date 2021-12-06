@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:41:31 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/03 16:42:55 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/06 15:49:59 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	if (dest > src)
 	{
-		i = n - 1;
-		while (i >= 0)
+		while (n > 0)
 		{
-			*(char *)(dest + i) = *(char *)(src + i);
-			i--;
+			*(char *)(dest + (n - 1)) = *(char *)(src + (n - 1));
+			n--;
 		}
 	}
 	else
