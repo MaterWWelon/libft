@@ -6,7 +6,7 @@
 #    By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 09:59:50 by mbellini          #+#    #+#              #
-#    Updated: 2021/12/07 11:28:57 by mbellini         ###   ########.fr        #
+#    Updated: 2021/12/07 11:31:48 by mbellini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,10 +33,6 @@ $(NAME):	$(OBJS)
 
 %.o: %.c
 	$(CC) $(FLAGS) -o $@ -c $<
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 clean:
 		$(RM) $(OBJS)
