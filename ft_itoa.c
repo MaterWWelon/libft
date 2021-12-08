@@ -6,13 +6,13 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:31:37 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/08 11:47:21 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/08 17:28:23 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_nbrlen(int nbr, int base)
+static size_t	ft_nbrlen(int nbr, int base)
 {
 	size_t	len;
 
