@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 17:44:29 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/06 16:38:24 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/08 14:49:31 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 void	*ft_memmove(void *dest, const void *src, size_t n);
 
-size_t	ft_strlcpy(char *dst, char *src, size_t size);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 

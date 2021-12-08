@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:17:25 by mbellini          #+#    #+#             */
-/*   Updated: 2021/12/06 18:22:33 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/07 17:57:53 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 
 	i = 0;
+	if ((ft_strlen(s) - start) < len)
+		len = ft_strlen(s) - start;
 	if (start > ft_strlen(s))
 		start = ft_strlen(s);
 	while (s[start + i] && i < len)
