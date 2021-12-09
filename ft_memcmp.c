@@ -6,7 +6,7 @@
 /*   By: mbellini <mbellini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:42:19 by mbellini          #+#    #+#             */
-/*   Updated: 2021/11/30 15:02:10 by mbellini         ###   ########.fr       */
+/*   Updated: 2021/12/09 17:55:00 by mbellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n > 0)
 	{
 		if (ptr1[i] < ptr2[i])
-			return (-(ptr2[i] - ptr1[i]) * 256);
+			return (-(ptr2[i] - ptr1[i]) % 256);
 		if (ptr1[i] > ptr2[i])
-			return ((ptr1[i] - ptr2[i]) * 256);
+			return ((ptr1[i] - ptr2[i]) % 256);
 		i++;
 		n--;
 	}
